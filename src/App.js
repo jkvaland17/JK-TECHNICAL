@@ -9,6 +9,7 @@ import Footer from "../src/Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {ThemeProvider} from "styled-components"
 import { GlobalStyle } from './GlobalStyle';
+import GoTop from './Components/GoTop';
 
 const App = () => {
 
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
+        <GoTop/>
         <Footer />
       </BrowserRouter>
     </ThemeProvider>
