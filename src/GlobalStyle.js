@@ -5,7 +5,8 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
  }
 html {
   font-size: 62.5%;
@@ -16,6 +17,7 @@ body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
+    
 }
 
 body::-webkit-scrollbar {
@@ -57,7 +59,7 @@ h2 {
 p {
   color: ${({ theme }) => theme.colors.text};
   opacity: .7;
-  font-size: 26.4px;
+  font-size: 14px;
   line-height: 1.5;
   margin-top: 16px;
   font-weight:400;
@@ -74,6 +76,7 @@ li {
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .grid {
@@ -125,10 +128,7 @@ li {
 /* ===========================================
 /* media queries  
 ======================================= */
-/* px  */
-/* rem  */
-/* em  */
-/* 1500px */
+
 
 //998px
 @media (max-width:${({ theme }) => theme.media.tab}) {

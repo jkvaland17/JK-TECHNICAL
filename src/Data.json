@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Research",
+    "image": "./images/Research.jpg",
+    "sr1": "Examing the field",
+    "sr2": "Project limitations",
+    "sr3": "Legal procedures"
+  },
+  {
+    "id": 2,
+    "title": "UX/UI Design",
+    "image": "./images/uxui.jpg",
+    "sr1": "User research",
+    "sr2": "Wire frames",
+    "sr3": "Visual design"
+  },
+  {
+    "id": 3,
+    "title": "Mobile development",
+    "image": "./images/mobiledev.jpg",
+   "sr1": "Native support",
+    "sr2": "Cross plate form app",
+    "sr3": "development"
+  },
+  {
+    "id": 4,
+    "title": "Web app design",
+    "image": "./images/webapp.jpg",
+   "sr1": "Front-end design",
+    "sr2": "Custom functionality",
+    "sr3": "Redesign"
+  },
+  {
+    "id": 5,
+    "title": "Software dev & ERP",
+    "image": "./images/erp.jpg",
+    "sr1": "Bespoke solution",
+    "sr2": "Development of MVPs",
+    "sr3": "Multi-device functionality"
+  },
+  {
+    "id": 6,
+    "title": "Online marketing",
+    "image": "./images/Onlinemarketing.jpg",
+    "sr1": "E-mail marketing automation",
+    "sr2": "Monthly performance audit",
+    "sr3": "Third-party Ad tracking"
+  }
+]

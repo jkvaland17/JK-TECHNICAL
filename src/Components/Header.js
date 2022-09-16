@@ -8,7 +8,8 @@ const Header = () => {
     <div>
       <MainHeader>
         <NavLink to="/">
-          <img src="../public/images/logo.png" alt="logo" className="logo"></img>
+          {/* <img src="./images/logo.png" alt="logo" className="logo"></img> */}
+          <span>JK Technical</span>
         </NavLink>
         <Nav />
       </MainHeader>
@@ -17,17 +18,20 @@ const Header = () => {
 };
 
 const MainHeader = styled.header`
-  padding: 0 76.8px;
-  height: 160px;
-  background-color: ${({ theme }) => theme.colors.bg};
+  padding: 5px 76.8px;
+  background-color: #0a1435;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-.logo{
-    height: 48px;
-    max-width:30%;
-
-}
+  span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .logo {
+    height: 40px;
+    max-width: 100%;
+  }
 `;
 export default Header;
