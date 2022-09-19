@@ -104,6 +104,21 @@ const MaiNav = styled.nav`
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    .navbatlink {
+      &:link,
+      &:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 15px;
+        color: ${({ theme }) => theme.colors.black};
+        transition: color 0.3s linear;
+      }
+
+      &:hover,
+      &:active {
+        color: ${({ theme }) => theme.colors.helper};
+      }
+    }
     .mobile-navbar-btn {
       display: inline-block;
       z-index: 999;
@@ -141,6 +156,7 @@ const MaiNav = styled.nav`
           &:link,
           &:visited {
             font-size: 4.2rem;
+            color:black;
           }
 
           &:hover,

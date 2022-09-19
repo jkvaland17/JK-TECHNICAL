@@ -63,7 +63,7 @@ const Footer = () => {
           {/* 4th column  */}
           <div className="footer-contact">
             <h3>Call Us</h3>
-            <h3>+91-8866656785</h3>
+            <h3>+91-9876543210</h3>
           </div>
         </div>
 
