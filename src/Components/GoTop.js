@@ -4,7 +4,7 @@ import { FaHandPointUp } from "react-icons/fa";
 
 const GoTop = () => {
     const [isVisible, setIsVisible] = useState(false);
-    
+
   const goToup = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     };
@@ -13,7 +13,6 @@ const GoTop = () => {
         let heightToHidden = 20;
         const winScroll =
           document.body.scrollTop || document.documentElement.scrollTop;
-
         if (winScroll > heightToHidden) {
           setIsVisible(true);
         } else {
@@ -28,9 +27,11 @@ const GoTop = () => {
 
   return (
     <GoUP>
-      <div className="top-btn" onClick={goToup}>
-        <FaHandPointUp className="top-btn-icon" />
-      </div>
+      {isVisible && (
+        <div className="top-btn" onClick={goToup}>
+          <FaHandPointUp className="top-btn-icon" />
+        </div>
+      )}
     </GoUP>
   );
 };
@@ -41,15 +42,10 @@ const GoUP = styled.section`
   align-items: center;
   position: relative;
 
-  .top-btn-icon {
-    text-align: center;
-    font-size: 2rem;
-  }
-
   .top-btn {
     font-size: 2.4rem;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     color: #fff;
     background-color: ${({ theme }) => theme.colors.btn};
     box-shadow: ${({ theme }) => theme.colors.shadow};
